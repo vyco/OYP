@@ -38,12 +38,17 @@
       <div class="flex flex--center align-center columns">
         <div class="title flex flex--center align-center columns"><i class="fa fa-arrow-left"><span>Back to selection</span></i>
           <h1>Editorials </h1>
+          <div class="btn-locker flex flex--center align-center rows">
+            <div class="btn btn-accepted"><span>Accepted</span></div>
+            <div class="btn btn-all"><span>All</span></div>
+            <div class="btn btn-rejected"><span>REJECTED</span></div>
+          </div>
         </div>
         <div class="flex-grid flex rows">
           <div class="col columns flex">
             <div class="row flex rows">
-              <div class="pic pic-small"></div>
-              <div class="pic pic-small"></div>
+              <div class="pic pic-small" data-state="accepted"></div>
+              <div class="pic pic-small" data-state="unaccepted"></div>
             </div>
             <div class="row flex">
               <div class="pic lrg"></div>

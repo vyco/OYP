@@ -219,10 +219,7 @@ section.lockup .flex-unit {
     height: 400px;
     background: purple; }
     .editorials .flex-grid .row .pic-small {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
+      width: 50%;
       background: blue;
       height: 100%;
       margin: 10px; }
@@ -238,6 +235,26 @@ section.lockup .flex-unit {
       height: 80px;
       background: yellow;
       margin: 1px; }
+
+.editorials .btn-locker {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .editorials .btn-locker .btn {
+    background: white;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 60px;
+    border: 3px solid black;
+    font-weight: bold;
+    -webkit-transition: .54s ease all;
+    -o-transition: .54s ease all;
+    transition: .54s ease all;
+    margin-left: 20px; }
+    .editorials .btn-locker .btn:hover {
+      background: black;
+      cursor: pointer;
+      letter-spacing: 3px;
+      color: white; }
 
 /*!
  * animate.css -http://daneden.me/animate

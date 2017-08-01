@@ -48,11 +48,18 @@ html
 				.title.flex.flex--center.align-center.columns
 					i.fa.fa-arrow-left <span>Back to selection</span>
 					h1 Editorials 
+					.btn-locker.flex.flex--center.align-center.rows
+						.btn.btn-accepted
+							span Accepted
+						.btn.btn-all
+							span All
+						.btn.btn-rejected
+							span REJECTED
 				.flex-grid.flex.rows
 					.col.columns.flex
 						.row.flex.rows
-							.pic.pic-small
-							.pic.pic-small
+							.pic.pic-small(data-state="accepted")
+							.pic.pic-small(data-state="unaccepted")
 						.row.flex
 							.pic.lrg
 						.row.flex.columns

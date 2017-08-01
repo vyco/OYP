@@ -8,6 +8,7 @@ $(document).ready(function(){
   selector();
   nav();
   fader();
+  filter();
 });
 function selector(){
   $('.editorials').css('display','none');
@@ -43,5 +44,18 @@ $('.pic-small').each(function(i){
       $('.pic').eq(i).addClass("animated");
       $('.pic').eq(i).addClass("fadeIn");
   },i*2000);
+});
+}
+function filter(){
+  var accept = $('.pic[data-state=accepted]');
+  var unaccepted = $('.pic[data-state=unaccepted]');
+  var all = $('.pic');
+$('.btn-accepted').click(function(){
+  console.log("showing accepted photos....")
+  unaccepted.css('display','none');
+  unaccepted.addClass("unaccepted");
+});
+$('.btn-all').click(function(){
+  $('.unaccepted').css('display','flex');
 });
 }
