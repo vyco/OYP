@@ -6,8 +6,26 @@ body {
 #enterSite {
   width: 100%;
   height: 100%; }
-  #enterSite .pics {
-    background: black; }
+  #enterSite .wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden; }
+    #enterSite .wrapper .pics {
+      background: url("https://i.imgur.com/Dvz9soK.jpg");
+        background-size: cover;
+        background-position: center center;
+      -webkit-transition: .56s ease all;
+      -o-transition: .56s ease all;
+      transition: .56s ease all;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      -webkit-animation: zoom 50s;
+      animation: zoom 50s; }
+      #enterSite .wrapper .pics:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0); }
   #enterSite .unit {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -172,10 +190,12 @@ section.lockup .flex-unit {
   transition: .56s ease all;
   border-radius: 10px; }
   section.lockup .flex-unit:hover {
-    -webkit-transform: scale(1.07);
-    -ms-transform: scale(1.07);
-    transform: scale(1.07);
-    cursor: pointer; }
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    cursor: pointer;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
 
 section.lockup .edit {
   background: url("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?dpr=0.75&auto=format&fit=crop&w=1500&h=1867&q=80&cs=tinysrgb&crop=");
@@ -207,6 +227,11 @@ section.lockup h3 {
     section.lockup h3 a span {
       font-size: 20px; }
 
+.editorials .pic-small {
+  width: 50%;
+  margin: 10px;
+  height: 200px; }
+
 .editorials h1 {
   text-transform: uppercase; }
 
@@ -233,10 +258,11 @@ section.lockup h3 {
     height: 100%; }
   .editorials .flex-grid .row {
     width: 100%;
-    height: 400px;
-    width: 50%;
-      width-height: 100%;
-      width-margin: 10px; }
+    height: 400px; }
+    .editorials .flex-grid .row .pic-small {
+      width: 50%;
+      height: 100%;
+      margin: 10px; }
     .editorials .flex-grid .row .lrg {
       width: 100%;
       height: 100%; }
@@ -968,6 +994,22 @@ section.lockup h3 {
   to {
     -webkit-transform: none;
     transform: none; } }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
 
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;

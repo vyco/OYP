@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.pic-small').css('transition','.56s ease position')
   lockup();
   selector();
   nav();
@@ -74,13 +75,14 @@ $('.flex-unit').each(function(i){
 
 }
 function filter(){
+
   var accepted = $('.pic[data-state=accepted]');
   var unaccepted = $('.pic[data-state=unaccepted]');
   var all = $('.pic');
+  all.css('display','flex');
 $('.btn-accepted').click(function(){
   console.log("showing accepted photos....")
   unaccepted.css('display','none');
-  unaccepted.addClass("unaccepted");
 });
 $('.btn-all').click(function(){
   $('.pic').css('display','flex');
@@ -90,5 +92,5 @@ $('.btn-rejected').click(function(){
 });
 }
 function imgAllocation(){
-$('.pic-small').css('background','url(https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)')
+$('.pic-small').css('background','url(https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)');
 }

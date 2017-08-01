@@ -7,7 +7,6 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -868,7 +867,14 @@
     transform: none;
   }
 }
-
+@keyframes zoom {
+   from {
+        transform: scale(1,1);
+   }
+   to {
+        transform: scale(1.2,1.2);
+   }
+}
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
