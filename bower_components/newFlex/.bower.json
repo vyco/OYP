@@ -1,0 +1,14 @@
+{
+  "name": "newFlex",
+  "homepage": "https://github.com/vyco/newFlex",
+  "_release": "d87a69107c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d87a69107c5da776cc867b18c4afea79043b43ad"
+  },
+  "_source": "https://github.com/vyco/newFlex.git",
+  "_target": "*",
+  "_originalSource": "newFlex",
+  "_direct": true
+}
