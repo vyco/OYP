@@ -1,3 +1,8 @@
+* {
+  -webkit-transition: .56s ease all;
+  -o-transition: .56s ease all;
+  transition: .56s ease all; }
+
 body {
   font-family: "Raleway",sans-serif;
   margin: 0;

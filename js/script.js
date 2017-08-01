@@ -46,6 +46,14 @@ $('.pic-small').each(function(i){
       $('.pic').eq(i).addClass("fadeIn");
   },i*2000);
 });
+$('.flex-unit').css('opacity','0');
+$('.flex-unit').each(function(i){
+  setTimeout(function(){
+
+      $('.flex-unit').eq(i).css('opacity','1');
+  },2000);
+});
+
 }
 function filter(){
   var accept = $('.pic[data-state=accepted]');
