@@ -9,6 +9,7 @@ $(document).ready(function(){
   nav();
   fader();
   filter();
+
 });
 function selector(){
   $('.editorials').css('display','none');

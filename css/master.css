@@ -164,28 +164,46 @@ section.lockup .flex-unit {
   -ms-flex: 1;
   flex: 1;
   padding: 30px;
-  background: black;
   height: 900px;
   margin: 10px;
   color: white;
   -webkit-transition: .56s ease all;
   -o-transition: .56s ease all;
-  transition: .56s ease all; }
+  transition: .56s ease all;
+  border-radius: 10px; }
   section.lockup .flex-unit:hover {
     -webkit-transform: scale(1.02);
     -ms-transform: scale(1.02);
     transform: scale(1.02); }
-  section.lockup .flex-unit h3 {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 300; }
-  section.lockup .flex-unit a {
+
+section.lockup .edit {
+  background: url("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?dpr=0.75&auto=format&fit=crop&w=1500&h=1867&q=80&cs=tinysrgb&crop=");
+    background-size: cover;
+    background-position: center center; }
+
+section.lockup .land {
+  background: url("https://images.unsplash.com/photo-1497107261019-ad37b3b579ee?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+    background-size: cover;
+    background-position: center center; }
+
+section.lockup .port {
+  background: url("https://images.unsplash.com/photo-1489440543286-a69330151c0b?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+    background-size: cover;
+    background-position: center center; }
+
+section.lockup h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  background: black;
+  padding: 5px 20px; }
+  section.lockup h3 a {
     color: red;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 3px;
     text-decoration: none; }
-    section.lockup .flex-unit a span {
+    section.lockup h3 a span {
       font-size: 20px; }
 
 .editorials h1 {
@@ -204,10 +222,8 @@ section.lockup .flex-unit {
 .editorials .flex-grid {
   width: 2000px;
   height: 1200px;
-  background: red;
   margin-top: 50px; }
   .editorials .flex-grid .col {
-    background: orange;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -216,24 +232,20 @@ section.lockup .flex-unit {
     height: 100%; }
   .editorials .flex-grid .row {
     width: 100%;
-    height: 400px;
-    background: purple; }
+    height: 400px; }
     .editorials .flex-grid .row .pic-small {
       width: 50%;
-      background: blue;
       height: 100%;
       margin: 10px; }
     .editorials .flex-grid .row .lrg {
       width: 100%;
-      height: 100%;
-      background: green; }
+      height: 100%; }
     .editorials .flex-grid .row .pics {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1;
       height: 80px;
-      background: yellow;
       margin: 1px; }
 
 .editorials .btn-locker {
