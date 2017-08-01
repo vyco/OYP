@@ -9,7 +9,7 @@ $(document).ready(function(){
   nav();
   fader();
   filter();
-
+  imgAllocation();
 });
 function selector(){
   $('.editorials').css('display','none');
@@ -56,7 +56,7 @@ $('.flex-unit').each(function(i){
 
 }
 function filter(){
-  var accept = $('.pic[data-state=accepted]');
+  var accepted = $('.pic[data-state=accepted]');
   var unaccepted = $('.pic[data-state=unaccepted]');
   var all = $('.pic');
 $('.btn-accepted').click(function(){
@@ -65,6 +65,12 @@ $('.btn-accepted').click(function(){
   unaccepted.addClass("unaccepted");
 });
 $('.btn-all').click(function(){
-  $('.unaccepted').css('display','flex');
+  $('.pic').css('display','flex');
 });
+$('.btn-rejected').click(function(){
+  accepted.css('display','none');
+});
+}
+function imgAllocation(){
+$('.pic-small').css('background','url(https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)')
 }
