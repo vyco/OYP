@@ -168,13 +168,16 @@ nav.global {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: -2px; }
-  nav.global .link a {
+  nav.global .link span {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
     padding: 10px;
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
+    nav.global .link span:hover {
+      cursor: pointer; }
 
 section.lockup .flex-unit {
   -webkit-box-flex: 1;
@@ -227,72 +230,72 @@ section.lockup h3 {
     section.lockup h3 a span {
       font-size: 20px; }
 
-.editorials .pic-small {
-  width: 50%;
-  margin: 10px;
-  height: 200px; }
-
-.editorials h1 {
-  text-transform: uppercase; }
-
-.editorials .fa {
-  font-size: 20px;
-  padding: 10px; }
-  .editorials .fa:hover {
-    cursor: pointer; }
-  .editorials .fa span {
-    font-family: "Raleway",sans-serif;
-    font-weight: bold;
+.editorials {
+  -webkit-transition: .56s ease positioon;
+  -o-transition: .56s ease positioon;
+  transition: .56s ease positioon; }
+  .editorials .pic-small {
+    width: 50%;
+    margin: 10px;
+    height: 200px; }
+  .editorials h1 {
+    text-transform: uppercase; }
+  .editorials .fa {
+    font-size: 20px;
     padding: 10px; }
-
-.editorials .flex-grid {
-  width: 2000px;
-  height: 1200px;
-  margin-top: 50px; }
-  .editorials .flex-grid .col {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin: 1px;
-    height: 100%; }
-  .editorials .flex-grid .row {
-    width: 100%;
-    height: 400px; }
-    .editorials .flex-grid .row .pic-small {
-      width: 50%;
-      height: 100%;
-      margin: 10px; }
-    .editorials .flex-grid .row .lrg {
-      width: 100%;
-      height: 100%; }
-    .editorials .flex-grid .row .pics {
+    .editorials .fa:hover {
+      cursor: pointer; }
+    .editorials .fa span {
+      font-family: "Raleway",sans-serif;
+      font-weight: bold;
+      padding: 10px; }
+  .editorials .flex-grid {
+    width: 2000px;
+    height: 1200px;
+    margin-top: 50px; }
+    .editorials .flex-grid .col {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      height: 80px;
-      margin: 1px; }
-
-.editorials .btn-locker {
-  margin-top: 40px;
-  margin-bottom: 30px; }
-  .editorials .btn-locker .btn {
-    background: white;
-    text-transform: uppercase;
-    color: black;
-    padding: 10px 60px;
-    border: 3px solid black;
-    font-weight: bold;
-    -webkit-transition: .54s ease all;
-    -o-transition: .54s ease all;
-    transition: .54s ease all;
-    margin-left: 20px; }
-    .editorials .btn-locker .btn:hover {
-      background: black;
-      cursor: pointer;
-      letter-spacing: 3px;
-      color: white; }
+      margin: 1px;
+      height: 100%; }
+    .editorials .flex-grid .row {
+      width: 100%;
+      height: 400px; }
+      .editorials .flex-grid .row .pic-small {
+        width: 50%;
+        height: 100%;
+        margin: 10px; }
+      .editorials .flex-grid .row .lrg {
+        width: 100%;
+        height: 100%; }
+      .editorials .flex-grid .row .pics {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: 80px;
+        margin: 1px; }
+  .editorials .btn-locker {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+    .editorials .btn-locker .btn {
+      background: white;
+      text-transform: uppercase;
+      color: black;
+      padding: 10px 60px;
+      border: 3px solid black;
+      font-weight: bold;
+      -webkit-transition: .54s ease all;
+      -o-transition: .54s ease all;
+      transition: .54s ease all;
+      margin-left: 20px; }
+      .editorials .btn-locker .btn:hover {
+        background: black;
+        cursor: pointer;
+        letter-spacing: 3px;
+        color: white; }
 
 .landscapes h1 {
   text-transform: uppercase; }
@@ -2802,3 +2805,42 @@ section.lockup h3 {
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
+
+.back-drop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%; }
+  .back-drop .about-me {
+    background: white;
+    padding: 80px;
+    border: none;
+    outline: none;
+    border-radius: 10px; }
+    .back-drop .about-me h1 {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 30px; }
+    .back-drop .about-me p {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 20px;
+      width: 700px;
+      line-height: 2em; }
+    .back-drop .about-me .closer {
+      text-transform: uppercase;
+      color: white;
+      padding: 20px 100px;
+      background: black;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      letter-spacing: 6px;
+      border: 3px solid black;
+      -webkit-transition: .56s ease all;
+      -o-transition: .56s ease all;
+      transition: .56s ease all; }
+      .back-drop .about-me .closer:hover {
+        cursor: pointer;
+        background: white;
+        color: black; }

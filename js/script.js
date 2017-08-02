@@ -6,7 +6,18 @@ $(document).ready(function(){
   fader();
   filter();
   imgAllocation();
+	aboutMe();
 });
+function aboutMe(){
+	$('.back-drop').css('display','none');
+	$('.about').click(function(e){
+		$('.back-drop').fadeIn("slow");
+
+	});
+	$('.closer').click(function(){
+		$('.back-drop').fadeOut("slow");
+	});
+}
 function lockup(){
   $('.main-body').css('display','none');
   $('.enter').click(function(){
@@ -38,7 +49,10 @@ $('.mixed').css('display','block');
 }
 
 function nav(){
-
+  $('.site-intro').click(function(){
+    $('.main-body').css('display','none');
+    $('#enterSite').fadeIn("slow");
+  });
   $('.back').click(function(event){
     event.preventDefault();
     $('#enterSite').css('display','block');
@@ -82,13 +96,21 @@ function filter(){
   all.css('display','flex');
 $('.btn-accepted').click(function(){
   console.log("showing accepted photos....")
-  unaccepted.css('display','none');
+	unaccepted.addClass("animated");
+	unaccepted.addClass("fadeOut");
+	unaccepted.css('display','none');
 });
 $('.btn-all').click(function(){
-  $('.pic').css('display','flex');
+  if($('.pic').hasClass("animated") && $('.pic').hasClass("fadeOut")){
+		$('.pic').removeClass("fadeOut");
+		$('.pic').addClass("fadeIn");
+		all.css('display','flex');
+	}
 });
 $('.btn-rejected').click(function(){
-  accepted.css('display','none');
+  accepted.addClass("animated");
+	accepted.addClass("fadeOut");
+	accepted.css('display','none');
 });
 }
 function imgAllocation(){
