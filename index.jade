@@ -28,21 +28,26 @@ html
 						span.about About Me
 						span photos
 						span.site-intro Site intro
-			section.lockup.flex.flex--center.align-center.rows
-				.flex-unit.flex.flex--center.align-center.columns.edit(data-id='1')
-					h3 People
-				
-				.flex-unit.flex.flex--center.align-center.columns.land(data-id='2')
-					h3 landscapes
-				
-				.flex-unit.flex.flex--center.align-center.columns.port(data-id='3')
-					h3 mixed
+			section.lockup.flex.flex--center.align-center.columns
+				.about-section.flex.flex--center.align-center.columns
+					h1 Hello my name is philly
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			
+				.container.flex.flex--center.align-center.rows
+					.flex-unit.flex.flex--center.align-center.columns.edit(data-id='1')
+						h3 People
+					
+					.flex-unit.flex.flex--center.align-center.columns.land(data-id='2')
+						h3 landscapes
+					
+					.flex-unit.flex.flex--center.align-center.columns.port(data-id='3')
+						h3 mixed
+				
 		.editorials
 			.flex.flex--center.align-center.columns
 				.title.flex.flex--center.align-center.columns
 					i.fa.fa-arrow-left <span>Back to selection</span>
-					h1.head-title People
+					h1.head-title People 
 					.btn-locker.flex.flex--center.align-center.rows
 						.btn.btn-accepted
 							span Accepted
@@ -53,13 +58,27 @@ html
 				.flex-grid.flex.rows
 					.col.columns.flex
 						.row.flex.rows
-							.pic.pic-small(data-state="accepted")
-							.pic.pic-small(data-state="unaccepted")
+							.pic.pic-small.posr(data-state="accepted")
+								.overlay.posa.flex.flex--center.align-center.columns
+									h1 #2
+									.btm.flex.flex--space-around.posa.align-center
+										i.fa.fa-heart 
+										span 12
+							.pic.pic-small.posr(data-state="unaccepted")
+								.overlay.posa
 						.row.flex
-							.pic.lrg
-						.row.flex.columns
-					.col.pic.lrg-pic
-						
+							.pic.lrg-pic.posr(data-state="accepted")
+								.overlay.posa
+						.row.flex
+							.pic.pic-small.posr(data-state="accepted")
+								.overlay.posa
+							.pic.pic-small.posr(data-state="unaccepted")
+								.overlay.posa
+					.col
+						.pic.lrg-pic.posr(data-state="unaccepted")
+							.overlay.posa
+				
+
 		.mixed
 			.flex.flex--center.align-center.columns
 				.title.flex.flex--center.align-center.columns
@@ -78,9 +97,14 @@ html
 							.pic.pic-small(data-state="accepted")
 							.pic.pic-small(data-state="unaccepted")
 						.row.flex
-							.pic.lrg
-						.row.flex.columns
-					.col.pic.lrg-pic
+							.pic.lrg-pic(data-state="accepted")
+						.row.flex
+							.pic.pic-small(data-state="accepted")
+							.pic.pic-small(data-state="unaccepted")
+					.col
+						.pic.pic.lrg-pic(data-state="unaccepted")
+				
+
 		.landscapes
 			.flex.flex--center.align-center.columns
 				.title.flex.flex--center.align-center.columns
@@ -99,7 +123,10 @@ html
 							.pic.pic-small(data-state="accepted")
 							.pic.pic-small(data-state="unaccepted")
 						.row.flex
-							.pic.lrg
-						.row.flex.columns
-					.col.pic.lrg-pic
+							.pic.lrg-pic(data-state="accepted")
+						.row.flex
+							.pic.pic-small(data-state="accepted")
+							.pic.pic-small(data-state="unaccepted")
+					.col
+						.pic.lrg-pic(data-state="unaccepted")
 				

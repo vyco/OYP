@@ -179,123 +179,160 @@ nav.global {
     nav.global .link span:hover {
       cursor: pointer; }
 
-section.lockup .flex-unit {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 30px;
-  height: 900px;
-  margin: 10px;
-  color: white;
-  -webkit-transition: .56s ease all;
-  -o-transition: .56s ease all;
-  transition: .56s ease all;
-  border-radius: 10px; }
-  section.lockup .flex-unit:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-    cursor: pointer;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
-
-section.lockup .edit {
-  background: url("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?dpr=0.75&auto=format&fit=crop&w=1500&h=1867&q=80&cs=tinysrgb&crop=");
-    background-size: cover;
-    background-position: center center; }
-
-section.lockup .land {
-  background: url("https://images.unsplash.com/photo-1497107261019-ad37b3b579ee?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
-    background-size: cover;
-    background-position: center center; }
-
-section.lockup .port {
-  background: url("https://images.unsplash.com/photo-1489440543286-a69330151c0b?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
-    background-size: cover;
-    background-position: center center; }
-
-section.lockup h3 {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 300;
-  background: black;
-  padding: 5px 20px; }
-  section.lockup h3 a {
-    color: red;
+section.lockup {
+  margin: 0;
+  padding: 0; }
+  section.lockup .flex-unit {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 30px;
+    height: 398px;
+    color: white;
+    -webkit-transition: .56s ease all;
+    -o-transition: .56s ease all;
+    transition: .56s ease all; }
+    section.lockup .flex-unit:hover {
+      -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      transform: scale(1.01);
+      cursor: pointer;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
+  section.lockup .container {
+    width: 100%; }
+  section.lockup .about-section {
+    background: white;
+    padding: 100px;
+    color: black;
+    width: 100%; }
+    section.lockup .about-section h1 {
+      font-size: 40px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: #555; }
+    section.lockup .about-section p {
+      font-size: 30px;
+      width: 2000px;
+      line-height: 2em;
+      font-weight: 300;
+      padding: 50px;
+      font-family: "Lato",sans-serif; }
+  section.lockup .edit {
+    background: url("https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?dpr=0.75&auto=format&fit=crop&w=1500&h=1867&q=80&cs=tinysrgb&crop=");
+      background-size: cover;
+      background-position: center center; }
+  section.lockup .land {
+    background: url("https://images.unsplash.com/photo-1497107261019-ad37b3b579ee?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+      background-size: cover;
+      background-position: center center; }
+  section.lockup .port {
+    background: url("https://images.unsplash.com/photo-1489440543286-a69330151c0b?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+      background-size: cover;
+      background-position: center center; }
+  section.lockup h3 {
     text-transform: uppercase;
+    font-size: 40px;
     font-weight: 300;
-    letter-spacing: 3px;
-    text-decoration: none; }
-    section.lockup h3 a span {
-      font-size: 20px; }
+    background: black;
+    padding: 5px 20px; }
+    section.lockup h3 a {
+      color: red;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-decoration: none; }
+      section.lockup h3 a span {
+        font-size: 20px; }
 
-.editorials {
-  -webkit-transition: .56s ease positioon;
-  -o-transition: .56s ease positioon;
-  transition: .56s ease positioon; }
-  .editorials .pic-small {
-    width: 50%;
-    margin: 10px;
-    height: 200px; }
-  .editorials h1 {
-    text-transform: uppercase; }
-  .editorials .fa {
-    font-size: 20px;
+.editorials h1 {
+  text-transform: uppercase; }
+
+.editorials .fa {
+  font-size: 20px;
+  padding: 10px; }
+  .editorials .fa:hover {
+    cursor: pointer; }
+  .editorials .fa span {
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
     padding: 10px; }
-    .editorials .fa:hover {
-      cursor: pointer; }
-    .editorials .fa span {
-      font-family: "Raleway",sans-serif;
-      font-weight: bold;
-      padding: 10px; }
-  .editorials .flex-grid {
-    width: 2000px;
-    height: 1200px;
-    margin-top: 50px; }
-    .editorials .flex-grid .col {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      margin: 1px;
-      height: 100%; }
-    .editorials .flex-grid .row {
+
+.editorials .flex-grid {
+  width: 2000px;
+  height: 1200px;
+  margin-top: 50px; }
+  .editorials .flex-grid .col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 10px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+    .editorials .flex-grid .col .pic:hover .overlay {
+      opacity: 1; }
+    .editorials .flex-grid .col .pic .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      opacity: 0;
+      -webkit-transition: .56s ease all;
+      -o-transition: .56s ease all;
+      transition: .56s ease all; }
+      .editorials .flex-grid .col .pic .overlay .btm {
+        bottom: 0px;
+        background: rgba(255, 255, 255, 0.7);
+        left: 0;
+        right: 0;
+        color: #999; }
+      .editorials .flex-grid .col .pic .overlay h1 {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 20px; }
+    .editorials .flex-grid .col .lrg-pic {
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      width: 100%; }
+    .editorials .flex-grid .col .row {
       width: 100%;
-      height: 400px; }
-      .editorials .flex-grid .row .pic-small {
+      height: 400px;
+      margin: 10px; }
+      .editorials .flex-grid .col .row .pic-small {
         width: 50%;
         height: 100%;
-        margin: 10px; }
-      .editorials .flex-grid .row .lrg {
-        width: 100%;
-        height: 100%; }
-      .editorials .flex-grid .row .pics {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        height: 80px;
-        margin: 1px; }
-  .editorials .btn-locker {
-    margin-top: 40px;
-    margin-bottom: 30px; }
-    .editorials .btn-locker .btn {
-      background: white;
-      text-transform: uppercase;
-      color: black;
-      padding: 10px 60px;
-      border: 3px solid black;
-      font-weight: bold;
-      -webkit-transition: .54s ease all;
-      -o-transition: .54s ease all;
-      transition: .54s ease all;
-      margin-left: 20px; }
-      .editorials .btn-locker .btn:hover {
-        background: black;
-        cursor: pointer;
-        letter-spacing: 3px;
-        color: white; }
+        background-size: cover;
+        background-position: center center; }
+        .editorials .flex-grid .col .row .pic-small:nth-of-type(2) {
+          margin-left: 10px; }
+
+.editorials .btn-locker {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .editorials .btn-locker .btn {
+    background: white;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 60px;
+    border: 3px solid black;
+    font-weight: bold;
+    -webkit-transition: .54s ease all;
+    -o-transition: .54s ease all;
+    transition: .54s ease all;
+    margin-left: 20px; }
+    .editorials .btn-locker .btn:hover {
+      background: black;
+      cursor: pointer;
+      letter-spacing: 3px;
+      color: white; }
 
 .landscapes h1 {
   text-transform: uppercase; }
@@ -319,25 +356,26 @@ section.lockup h3 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin: 1px;
-    height: 100%; }
-  .landscapes .flex-grid .row {
-    width: 100%;
-    height: 400px; }
-    .landscapes .flex-grid .row .pic-small {
-      width: 50%;
+    margin: 10px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+    .landscapes .flex-grid .col .lrg-pic {
       height: 100%;
-      margin: 10px; }
-    .landscapes .flex-grid .row .lrg {
+      background-size: cover;
+      background-position: center center;
+      width: 100%; }
+    .landscapes .flex-grid .col .row {
       width: 100%;
-      height: 100%; }
-    .landscapes .flex-grid .row .pics {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      height: 80px;
-      margin: 1px; }
+      height: 400px;
+      margin: 10px; }
+      .landscapes .flex-grid .col .row .pic-small {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center; }
+        .landscapes .flex-grid .col .row .pic-small:nth-of-type(2) {
+          margin-left: 10px; }
 
 .landscapes .btn-locker {
   margin-top: 40px;
@@ -381,25 +419,26 @@ section.lockup h3 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin: 1px;
-    height: 100%; }
-  .mixed .flex-grid .row {
-    width: 100%;
-    height: 400px; }
-    .mixed .flex-grid .row .pic-small {
-      width: 50%;
+    margin: 10px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+    .mixed .flex-grid .col .lrg-pic {
       height: 100%;
-      margin: 10px; }
-    .mixed .flex-grid .row .lrg {
+      background-size: cover;
+      background-position: center center;
+      width: 100%; }
+    .mixed .flex-grid .col .row {
       width: 100%;
-      height: 100%; }
-    .mixed .flex-grid .row .pics {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      height: 80px;
-      margin: 1px; }
+      height: 400px;
+      margin: 10px; }
+      .mixed .flex-grid .col .row .pic-small {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center; }
+        .mixed .flex-grid .col .row .pic-small:nth-of-type(2) {
+          margin-left: 10px; }
 
 .mixed .btn-locker {
   margin-top: 40px;
@@ -2808,7 +2847,7 @@ section.lockup h3 {
 
 .back-drop {
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   width: 100%;
   height: 100%; }
   .back-drop .about-me {
@@ -2816,7 +2855,8 @@ section.lockup h3 {
     padding: 80px;
     border: none;
     outline: none;
-    border-radius: 10px; }
+    outline: 4px solid white;
+    outline-offset: 10px; }
     .back-drop .about-me h1 {
       text-transform: uppercase;
       letter-spacing: 5px;

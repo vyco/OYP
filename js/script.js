@@ -73,12 +73,13 @@ function fader(){
         $('.item').eq(i).addClass("fadeIn");
     },i*400);
 });
-$('.pic-small').each(function(i){
+/*$('.pic-small').each(function(i){
   setTimeout(function(){
       $('.pic').eq(i).addClass("animated");
       $('.pic').eq(i).addClass("fadeIn");
   },i*2000);
 });
+*/
 $('.flex-unit').css('opacity','0');
 $('.flex-unit').each(function(i){
   setTimeout(function(){
@@ -109,10 +110,17 @@ $('.btn-all').click(function(){
 });
 $('.btn-rejected').click(function(){
   accepted.addClass("animated");
-	accepted.addClass("fadeOut");
-	accepted.css('display','none');
+  accepted.addClass("fadeOut");
+  accepted.css('display','none');
 });
 }
 function imgAllocation(){
+$('.lrg-pic').css(
+  {
+    'background':'url(https://images.unsplash.com/photo-1481391564276-da6fcacaee31?dpr=0.75&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)',
+    'background-size':'cover',
+    'background-position':'center center'
+}
+);
 $('.pic-small').css('background','url(https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=0.75&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)');
 }
